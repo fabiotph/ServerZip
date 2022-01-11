@@ -1,0 +1,1 @@
+for i in {1..1000}; do wkhtmltopdf https://en.wikipedia.org/wiki/Special:Random pdf2/page${i}.pdf &; done 
