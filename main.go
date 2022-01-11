@@ -14,7 +14,7 @@ import (
 func main() {
 	PrintMemoryUsage()
 	var await sync.WaitGroup
-	const count = 20
+	const count = 1
 	fmt.Printf("Fazendo a operação %d vezes\n", count)
 	start := time.Now()
 	for _, _ = range [count]int{} {
@@ -29,7 +29,7 @@ func main() {
 
 func WriteZip(await *sync.WaitGroup) {
 	defer await.Done()
-	basePathPdf := "pdf/"
+	basePathPdf := "pdf2/"
 	basePathZip := "outFile/"
 
 	if _, err := os.Stat(basePathZip); os.IsNotExist(err) {
