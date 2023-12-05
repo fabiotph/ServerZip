@@ -1,3 +1,3 @@
 # ServerZip
 
-Projeto back-end em Golang para criação de arquivos comprimidos no formato .zip
+Projeto back-end em Golang que comprime arquivos para o formato .zip
